@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7797561196353958260}
   - component: {fileID: 7204533105622146311}
   - component: {fileID: -4735385584434494782}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy_Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,3 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cab431d658b19b468bda9b700de4e1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 20
+  _missileSpawnRate: 2
+  _reloadTime: 15
+  firePosition: {fileID: 2621119634647994038}

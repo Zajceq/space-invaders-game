@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6029715896273141287}
   - component: {fileID: 2111862037510272302}
   - component: {fileID: 4407703627075063132}
-  - component: {fileID: -6366694297860870563}
-  m_Layer: 0
+  - component: {fileID: 181224527}
+  m_Layer: 7
   m_Name: Enemy_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ PolygonCollider2D:
       - {x: 0.2747192, y: -0.14619114}
       - {x: 0.34162363, y: -0.15147194}
       - {x: 0.30751136, y: -0.026904445}
---- !u!114 &-6366694297860870563
+--- !u!114 &181224527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,6 +139,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7934147369201417374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cab431d658b19b468bda9b700de4e1a, type: 3}
+  m_Script: {fileID: 11500000, guid: e2325d648c32667458d3ff7fdaf1549a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speed: 5
+  _cycleTime: 10
+  score: 200
+  _direction: -1

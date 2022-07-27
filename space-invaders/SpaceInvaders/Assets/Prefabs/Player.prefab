@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 1658133352211081533}
   - component: {fileID: 8356843545581296028}
   - component: {fileID: 2349563958166936535}
-  m_Layer: 0
+  - component: {fileID: 2037274369}
+  - component: {fileID: 1712228761}
+  - component: {fileID: 1712228762}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -95,7 +98,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -132,3 +135,55 @@ PolygonCollider2D:
       - {x: 0.2215073, y: 0.12302542}
       - {x: 0.16354378, y: 0.08279419}
       - {x: 0.048831537, y: 0.27309543}
+--- !u!114 &2037274369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4788226536055598889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15d1914f20f5b343a0e78b6583703ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 3
+  _distanceFromEdge: 0.4
+  firePosition: {fileID: 1658133352211081533}
+--- !u!50 &1712228761
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4788226536055598889}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &1712228762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4788226536055598889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6045adc68a031349bff815542f2d934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laser: {fileID: 1616015857585466754, guid: 7bfa5638515cc904fb90363c9c08a69a, type: 3}
+  laserAmount: 5
+  willGrow: 1
+  lasers: []
